@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/txtTT"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:paddingLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnXoa"
+            android:background="@drawable/shp_button"
+            android:text="Xóa"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btnXoa"
+            android:layout_alignParentRight="true"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:id="@+id/btnSua"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shp_button"
+            android:layout_toLeftOf="@id/btnXoa"
+            />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/txtND"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/txtDateTime"
+        android:text="15/4/2017 17:00"
+        android:gravity="center"/>
+</LinearLayout>
